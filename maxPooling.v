@@ -6,13 +6,13 @@
 `timescale 1ns / 1ps
 
 module maxPooling(
-    input clk,
+    	input clk,
 	input [21:0] input1,
 	input [21:0] input2,
 	input [21:0] input3,
 	input [21:0] input4,
 	input enable,
-    output reg signed [21:0] output1,
+    	output reg signed [21:0] output1,
 	output reg maxPoolingDone
     );
 	 
