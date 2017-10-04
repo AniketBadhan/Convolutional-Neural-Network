@@ -1,22 +1,22 @@
 /*
 	Author: Aniket Badhan
-	Description: Multiplication stage
+	Description: Multiplication stage of the convolution of image/pattern with Laplacian filter
 */
 
 `timescale 1ns / 1ps
 
 module ConvolutionStage1(
 	input clk,
-    input [3:0] input2,
-    input [3:0] input4,
-    input [3:0] input5,
-    input [3:0] input6,
-    input [3:0] input8,
-    output reg signed [4:0] output1,
-    output reg signed [4:0] output2,
-    output reg signed [5:0] output3,
-    output reg signed [4:0] output4,
-    output reg signed [4:0] output5,
+	input [3:0] input2,
+	input [3:0] input4,
+	input [3:0] input5,
+	input [3:0] input6,
+	input [3:0] input8,
+	output reg signed [4:0] output1,
+	output reg signed [4:0] output2,
+	output reg signed [5:0] output3,
+	output reg signed [4:0] output4,
+	output reg signed [4:0] output5,
 	input enable,
 	output reg done	
     );
