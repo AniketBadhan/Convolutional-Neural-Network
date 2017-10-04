@@ -7,10 +7,10 @@
 
 module adderStage2(
 	input [4:0] input1,
-    input [4:0] input2,
+    	input [4:0] input2,
 	input [5:0] input3,
-    output reg [6:0] output1,
-    input clk,
+    	output reg [6:0] output1,
+    	input clk,
 	input enable,
 	output reg done
     );
