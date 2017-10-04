@@ -1,6 +1,6 @@
 /*
 	Author: Aniket Badhan
-	Description: Multiplication stage
+	Description: Multiplication stage of convolution of output at stage 1
 */
 
 `timescale 1ns / 1ps
@@ -8,26 +8,26 @@
 module ConvolutionStage2(
 	input clk,
 	input enable,
-    input [7:0] input1,
-    input [7:0] input2,
-    input [7:0] input3,
-    input [7:0] input4,
-    input [7:0] input5,
-    input [7:0] input6,
-    input [7:0] input7,
-    input [7:0] input8,
-    input [7:0] input9,
-    input [7:0] input10,
-    input [7:0] input11,
-    input [7:0] input12,
+	input [7:0] input1,
+    	input [7:0] input2,
+    	input [7:0] input3,
+    	input [7:0] input4,
+    	input [7:0] input5,
+    	input [7:0] input6,
+    	input [7:0] input7,
+    	input [7:0] input8,
+   	input [7:0] input9,
+    	input [7:0] input10,
+    	input [7:0] input11,
+    	input [7:0] input12,
 	
-    output reg signed [15:0] output1,
-    output reg signed [15:0] output2,
-    output reg signed [15:0] output3,
-    output reg signed [15:0] output4,
-    output reg signed [15:0] output5,
-    output reg signed [15:0] output6,
-	 output reg done
+    	output reg signed [15:0] output1,
+    	output reg signed [15:0] output2,
+    	output reg signed [15:0] output3,
+    	output reg signed [15:0] output4,
+    	output reg signed [15:0] output5,
+    	output reg signed [15:0] output6,
+	output reg done
     );
 	
 	always @ (posedge clk) begin
