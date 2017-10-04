@@ -6,10 +6,10 @@
 `timescale 1ns / 1ps
 
 module adderStage4(
-    input [6:0] input1,
-    input [5:0] input2,
-    output reg [7:0] output1,
-    input clk,
+    	input [6:0] input1,
+    	input [5:0] input2,
+    	output reg [7:0] output1,
+    	input clk,
 	input enable,
 	output reg done
     );
