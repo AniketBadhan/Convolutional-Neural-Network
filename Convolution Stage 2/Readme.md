@@ -1,5 +1,5 @@
 
-Convolution Stage 2 - convolution of convoluted image with convoluted pattern
+Convolution Stage 2 - convolution of convolved image with convolved pattern
 
 This folder contains code files only for the second layer of convolution of outputs obtained from the first layer of convolution.
 
