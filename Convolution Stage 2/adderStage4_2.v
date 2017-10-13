@@ -6,12 +6,12 @@
 `timescale 1ns / 1ps
 
 module adderStage4_2(
-    input [18:0] input1,
-    input [18:0] input2,
+    	input [18:0] input1,
+    	input [18:0] input2,
 	input [18:0] input3,
-    output reg [20:0] output1,
+    	output reg [20:0] output1,
 	input enable,
-    input clk
+    	input clk
     );
 	
 	always @ (posedge clk) begin
