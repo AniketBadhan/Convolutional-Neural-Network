@@ -1,6 +1,6 @@
 /*
 	Author: Aniket Badhan
-	Description: Addition stage 4
+	Description: Addition stage 4 of Convolution with Laplacian filter
 */
 
 `timescale 1ns / 1ps
