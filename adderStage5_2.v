@@ -1,6 +1,6 @@
 /*
 	Author: Aniket Badhan
-	Description: Addition stage 2
+	Description: Addition stage 5 of Convolution layer 2, convolution of convolved image and convolved pattern
 */
 
 `timescale 1ns / 1ps
