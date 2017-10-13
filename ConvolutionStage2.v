@@ -1,6 +1,6 @@
 /*
 	Author: Aniket Badhan
-	Description: Multiplication stage of convolution of output at stage 1
+	Description: Multiplication stage of Convolution Layer 2, convolution of outputs at stage 1
 */
 
 `timescale 1ns / 1ps
