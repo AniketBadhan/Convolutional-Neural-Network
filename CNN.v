@@ -743,6 +743,7 @@ module CNN (
 		.done(done5_1)
 	);
 	
+	//assigning values to the input signals for the convolution operation in stage 2
 	assign image_stage2_1 = (enable_stage2_imagePattern && (rowCount_pattern < `CONVROW - 1)) ? imageArray[count_Stage2+0] : 8'b00000000;
 	assign image_stage2_2 = (enable_stage2_imagePattern && (rowCount_pattern < `CONVROW - 1)) ? imageArray[count_Stage2+1] : 8'b00000000;
 	assign image_stage2_3 = (enable_stage2_imagePattern && (rowCount_pattern < `CONVROW - 1)) ? imageArray[count_Stage2+2] : 8'b00000000;
@@ -845,8 +846,8 @@ module CNN (
 		.enable(enable_maxPooling),
 		.output1(maxPooling_Output),
 		.maxPoolingDone(maxPoolingDone)
-    );
-	
+    	);
+	//assigning values to the input signals for the max pooling layer
 	assign input_maxpooling_1 = (enable_maxPooling && (rowCount_Stage_maxpooling < `MAXROW - 1)) ?  stage2Output[count_Stage_maxpooling+0] : 22'b0;
 	assign input_maxpooling_2 = (enable_maxPooling && (rowCount_Stage_maxpooling < `MAXROW - 1)) ?  stage2Output[count_Stage_maxpooling+1] : 22'b0;
 	assign input_maxpooling_3 = (enable_maxPooling && (rowCount_Stage_maxpooling < `MAXROW - 1)) ?  stage2Output[count_Stage_maxpooling+121] : 22'b0;
